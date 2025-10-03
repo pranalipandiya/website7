@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand%3A500%2C700%2C300%2C400%2C600%7CUbuntu%3A300&amp;display=swap&amp;ver=6.6.1"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&loading=async&libraries=maps,marker&v=beta" defer>
+</script>
+</head>
+
+<body>
+    <!-- ===========================   Navigation Bar ==================== -->
+    <section class="about_first">
+        <div class="header">
+            <img src="photos/cropped-tl-logo-2023.jpg" class="img_1">
+            <ul class="main_ul">
+                <li class="menu"><a class="menu_a" href="index.html">Home</a></li>
+                <li class="menu"><a class="menu_a" href="about_us.html">About Us</a></li>
+                <li class="menu">
+                    <a class="menu_a" href="services.html">Services <i class="fa-solid fa-angle-down"></i> </a>
+                    <div class="dropdown_content">
+                        <a href="it_development.html">IT Development</a>
+                        <a href="consulting.html">IT Consulting</a>
+                    </div>
+                </li>
+                <li class="menu"><a class="menu_a" href="client.html">Clients</a></li>
+                <li class="menu"><a class="menu_a" href="skill_development.html">Skill Development <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown_content">
+                        <a href="aws_traning.html">AWS Training</a>
+                        <a href="adobe_tech.html">Adobe Technologies</a>
+                        <div class="dropdown_content_sub">
+                            <a href="adobe_flex_tech.html">Adobe Flex Technologies</a>
+                        </div>
+                        <a href="microsoft_tech.html">MicroSoft Technologies</a>
+                        <div class="dropdown_content_sub">
+                            <a href="microsoft_asp.html">ASP.Net Development</a>
+                            <a href="microsoft_c.html">C# Development</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu"><a class="menu_a" href="career.html">Careers</a></li>
+                <li class="menu"><a class="menu_a active" href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- ==================================  contact Element ========================= -->
+    <section class="contact_details">
+        <div class="contact_one">
+            <div class="contact_info">
+                <div class="contact_heading">
+                    <h2 class="contact_head">Get in Touch</h2>
+                </div>
+                <div class="contact_para">
+                    <p class="para_8">For more information about our services, get in touch with ThinkLogic via contacts
+                    </p>
+                </div>
+            </div>
+            <div class="contact_info">
+                <div class="contact_address">
+                    <div class="icons_1"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+                    <h3 class="contact_add"> Address</h3>
+                </div>
+                <div class="contact_para">
+                    <div class="add_sec">
+                        <img src="photos/usa-flag-icon.png" class="icons_flag">
+                        <p class="para_9">15901 Ronald W Reagan Blvd, Suite 318, Leander, TX 78641</p>
+                    </div>
+                    <div class="add_sec">
+                        <img src="photos/india-flag-icon.png" class="icons_flag">
+                    <p class="para_9">16-2-752/142, Saidabad, Hyderabad, Telengana India 500059</p>
+                </div>
+                </div>
+            </div>
+            <div class="information_phone">
+            <div class="contact_info">
+                <div class="contact_address">
+                    <div class="icons_1"><i class="fa-solid fa-phone"></i></div>
+                    <h3 class="contact_add"> Contact</h3>
+                </div>
+                <div class="contact_para">
+                    <p class="para_9">Phone: +91 732-668-5789</p>
+                    <p class="para_9">Phone:  +1 213-452-1505</p>
+                </div>
+          </div>
+          <div class="contact_info">
+                <div class="contact_address">
+                    <div class="icons_1"><i class="fa-solid fa-envelope"></i></div>
+                    <h3 class="contact_add"> E-mail</h3>
+                </div>
+                <div class="contact_para">
+                    <p class="para_9">Mail: hr@thinklogicinc.com</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="contact_one">
+            <form id="contact_form">
+            <div class="form_section">
+                <div class="field_one">
+                    <label class="contact_label" for="first_name"> <span class="mandatory">*</span> &nbsp; First Name
+                    </label>
+                    <input type="text" id="first_name" class="first_name" name="first_name" required="">
+                </div>
+                <div class="field_one">
+                    <label class="contact_label" for="last_name"> <span class="mandatory">*</span> &nbsp; Last Name
+                    </label>
+                    <input type="text" id="last_name" class="first_name" name="first_name" required="">
+                </div>
+            </div>
+            <div class="form_section">
+                <div class="field_one">
+                    <label class="contact_label" for="first_name"> <span class="mandatory">*</span> &nbsp; Email Address
+                    </label>
+                    <input type="email" id="first_name" class="first_name" name="first_name" required="">
+                </div>
+                <div class="field_one">
+                    <label class="contact_label" for="last_name"> <span class="mandatory">*</span> &nbsp; Contact Number
+                    </label>
+                    <input type="number" id="last_name" class="first_name" name="first_name" required="">
+                </div>
+            </div>
+            <div class="form_section">
+                <div class="field_one">
+                    <label class="contact_label" for="first_name"> <span class="mandatory">*</span> &nbsp;
+                     Interested in
+                    </label>
+                    <input type="text" id="first_name" class="first_name" name="first_name" required="">
+                </div>
+                <div class="field_one">
+                    <label class="contact_label" for="last_name"> <span class="mandatory">*</span> &nbsp;
+                        Country
+                    </label>
+                    <input type="text" id="last_name" class="first_name" name="first_name" required="">
+                </div>
+            </div>
+            <div class="form_section">
+            <div class="field_one">
+                <label class="contact_label_message" for="message">Let us Know how we can help you today (optional) </label>
+                <textarea id="message" class="message" name="message"></textarea>
+            </div>
+        </div>
+            <div class="button_submit"><button class="button_4">Submit</button></div>
+            <div class="popup" id="Popup"><img src="photos/submit-img.png" class="popup_img" alt="Submit"></div>
+        </form>
+        </div>
+ 
+    </section>
+    <div class="iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.3197290656913!2d-97.80528622568886!3d30.56851839355263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b2ca0efaaa8e3%3A0x176d393d0c91feee!2s15901%20Ronald%20Reagan%20Blvd%20%23318%2C%20Leander%2C%20TX%2078641%2C%20USA!5e0!3m2!1sen!2sin!4v1724922773788!5m2!1sen!2sin" width="48%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.8800534929!2d78.26795694292137!3d17.412627419601563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1668448140029!5m2!1sen!2sin" width="48%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+    <!-- ==================== Footer Section =============== -->
+    <section class="five">
+        <div class="footer">
+            <div class="footer_section">
+                <div class="para_3">
+                    <p>© Copyright 2023 Think Logic Inc. All Rights Reserved.</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== End Footer Section =============== -->
+<script>
+    document.getElementById('contact_form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        document.getElementById('Popup').classList.add('show'); // Show the popup
+    
+        // Optionally, you can hide the popup after a few seconds
+        setTimeout(function() {
+            document.getElementById('Popup').classList.remove('show');
+             // Reset the form after the popup is hidden
+            document.getElementById('contact_form').reset();
+        }, 3000); // Hide the popup after 3 seconds
+    });
+   </script> 
+</body>
+
+</html>

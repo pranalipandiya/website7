@@ -1,0 +1,1087 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================== Header Section ========== */
+.header {
+    position: fixed;
+    height: 75px;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.img_1 {
+    margin-left: 100px;
+    height: 75px;
+    width: 75px;
+}
+
+.main_ul {
+    list-style: none;
+    float: right;
+    margin-right: 100px;
+}
+
+.menu {
+    display: inline-block;
+    padding: 20px 0;
+    vertical-align: middle;
+    position: relative;
+}
+
+.menu_a,
+.dropdown_content a {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    padding: 5px 0;
+    font-size: 14px;
+    margin-left: 35px;
+    color: #192836;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.menu_a:hover,
+.menu_a:focus,
+.menu_a:active,
+.dropdown_content a:hover,
+.dropdown_content a:focus,
+.dropdown_content a:active {
+    color: #00d9a6;
+    text-decoration: none;
+}
+
+.menu_a::before,
+.dropdown_content a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #00d9a6;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform 0.5s ease-out;
+}
+
+.menu_a:active::before,
+.dropdown_content a:active::before {
+    background-color: #00d9a6;
+}
+
+.menu_a:hover::before,
+.menu_a:focus::before,
+.dropdown_content a:hover::before,
+.dropdown_content a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.menu_a.active {
+    color: #00d9a6;
+    font-weight: bold;
+}
+
+.menu_a.active::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+    background-color: #00d9a6;
+}
+
+.dropdown_content,
+.dropdown_content_sub {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown_content a {
+    display: block;
+    margin-left: 0;
+    padding: 5px 16px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    top: 40;
+    right: 100%;
+    margin-left: 25px;
+}
+
+.dropdown_content_sub {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 100%;
+}
+
+.menu:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown_content a:hover+.dropdown_content_sub,
+.dropdown_content_sub:hover {
+    display: block;
+}
+
+/* ===================== End Header Section ============== */
+/* ===================== Swiper & Home Main Section ============== */
+.swiper {
+    width: 85%;
+    height: 30%;
+    margin-top: 5%;
+}
+
+.swiper-pagination {
+    bottom: 50px;
+}
+
+.main_body {
+    height: 570px;
+    width: 100%;
+    background-color: #fafafa;
+
+}
+
+.data_section {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 20px;
+}
+
+.heading_1 {
+    font-size: 14px;
+    color: #00d9a6;
+    font-family: "Quicksand";
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 2px;
+    background-color: transparent;
+}
+
+.span1 {
+    color: #00d9a6;
+}
+
+.img_section {
+    float: right;
+}
+
+.img_bg {
+    float: right;
+}
+
+.img1 {
+    height: 543px;
+    width: 563px;
+    margin-top: 20px;
+    margin-left: 18%;
+    border-radius: 500px;
+    transform: scaleX(-1);
+    object-position: 100px;
+
+}
+
+.sub_heading1 {
+    margin-top: 20px;
+    width: 510px;
+    font-size: 36px;
+    text-align: left;
+    color: #202020;
+    font-family: "Quicksand";
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -3px;
+    background-color: transparent;
+}
+
+.img_2 {
+    margin-top: 20px;
+}
+
+.para_1 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    line-height: 160%;
+    background-color: transparent;
+}
+
+.para_2 {
+    margin-top: 10px;
+    font-size: 15px;
+    width: 500px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    line-height: 160%;
+    background-color: transparent;
+}
+
+.button_1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    border: none;
+    background-color: #3197fb;
+}
+
+.button_1:hover {
+    background-color: #00d9a6;
+}
+
+/* =================== End Swiper & Home Main Section =============== */
+/* =============== Footer ============ */
+.footer {
+    margin-top: 20px;
+    background-color: #4a4e56;
+    height: 50px;
+}
+
+.footer_section {
+    display: flex;
+}
+
+.para_3 {
+    color: #a3b5ca;
+    font-size: 13px;
+    font-family: "Segoe UI";
+    padding: 15px 0;
+    margin-bottom: 0;
+    margin-left: 100px;
+}
+
+.icons {
+    cursor: pointer;
+    margin-left: 46%;
+    margin-top: 15px;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.fa-brands {
+    color: #FFF;
+    text-align: center;
+    padding: 5px;
+    background-color: #3197fb;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+
+}
+
+.fa-brands:hover {
+    background-color: #00d9a6;
+}
+
+/* =============== End Footer =========== */
+
+/* ========================= About Section ================ */
+.about_main_body {
+    background-color: #e8ecef;
+    height: 300px;
+}
+
+.about_bg1 {
+    padding: 160px 0 100px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -50vw;
+    top: 20%;
+    margin-bottom: 0;
+}
+
+.about_bg1::after {
+    content: "";
+    background-color: #fafafa;
+    opacity: 0.502;
+    position: absolute;
+    top: -91px;
+    width: 30%;
+    height: 450px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(57deg);
+    right: 34vw;
+}
+
+.heading_3 {
+    margin-top: -7%;
+    margin-left: 100px;
+    width: 510px;
+    font-size: 24px;
+    text-align: left;
+    color: #202020;
+    font-family: "Quicksand";
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -3px;
+    background-color: transparent;
+}
+
+.about_element {
+    margin-top: 90px;
+}
+
+.para_4 {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    color: #192836;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 85%;
+    text-align: left;
+}
+
+.about_sub_info {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 100px;
+}
+
+.sub_info {
+    border: #00d9a6;
+    border-radius: 10px;
+    height: 350px;
+    width: 25%;
+    background-color: #fafafa;
+    color: #e8ecef;
+    border-radius: 10px;
+    border: #000;
+    box-shadow: 0 0 30px 0 rgba(70, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+}
+.sub_info_service {
+    border: #00d9a6;
+    border-radius: 10px;
+    height: 240px;
+    width: 25%;
+    background-color: #fafafa;
+    color: #e8ecef;
+    border-radius: 10px;
+    border: #000;
+    box-shadow: 0 0 30px 0 rgba(70, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+}
+
+.sub_info:hover , .sub_info_service:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about_icons{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: #00d9a6;
+    border-radius: 50%;
+    margin-left: 40%;
+    margin-top: 20px;
+    border: 2px solid  #000;
+}
+.img_about_icon{
+    border: 7px solid  #FFF;
+    border-radius: 50%;
+}
+.heading_4 {
+    font-family: "Segoe UI";
+    font-size: 22px;
+    color: #192836;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.para_6 {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    color: #192836;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    justify-content: center;
+}
+
+/* ============================= End About US =========== */
+
+/* ============================= Skill Developemnt Section =========== */
+
+.aws_curriculum_photo{
+    margin-top: 10px;
+    float: right;
+    width: 40%;
+    height: 250px;
+}
+.security_management{
+    margin-top: 20px;
+    float: right;
+    width: 40%;
+    height: 250px;
+}
+
+/* ============================= END  Skill Developemnt Section =========== */
+
+/* ============================= Career Section =========== */
+.search_section {
+    width: 85%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.search_job {
+    display: flex;
+    padding: 30px;
+    width: 70%;
+    margin-left: 100px;
+    margin-top: -150px;
+    background-color: #f2f2f2;
+    position: absolute;
+}
+
+.keywords {
+    width: 100%;
+    display: flex;
+    gap: 33px;
+}
+
+.form_keywords {
+    border: 1px solid #e1e1e1;
+    color: #666;
+    font-size: 16px;
+    height: 40px;
+    width: 39%;
+}
+
+.form_keywords_label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.location {
+    border: 1px solid #e1e1e1;
+    color: #666;
+    font-size: 16px;
+    height: 40px;
+    width: 39%;
+}
+
+.posting_job {
+    border: 2px solid #f2f2f2;
+    height: 150px;
+    width: 85%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.job_post{
+    margin-bottom: 50px;
+}
+
+.job_element {
+    display: flex;
+    margin-top: 20px;
+}
+
+.img_job {
+    margin-left: 30px;
+    border: 2px solid #f2f2f2;
+    width: 5%;
+}
+
+.img_4 {
+    height: 40px;
+    width: 50px;
+}
+
+.title_job {
+    margin-left: 30px;
+    color: #3b3a3c;
+    font-size: 16px;
+    word-wrap: break-word;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.location_job {
+    margin-left: 200px;
+    display: flex;
+    gap: 10px;
+}
+
+.button_2 {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3197fb;
+    color: #FFF;
+}
+
+.button_2:hover {
+    background-color: #00d9a6;
+}
+
+.para_7 {
+    color: #3297fa;
+    font-size: 14px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.posted_dt {
+    margin-left: 60px;
+    display: flex;
+    gap: 10px;
+}
+
+.button_3 {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3197fb;
+    color: #FFF;
+}
+
+.button_3:hover {
+    background-color: #00d9a6;
+}
+
+.button_3 a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.job_button {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.posted_dt_1 {
+    margin-left: 55%;
+    display: flex;
+    gap: 10px;
+}
+
+.posted_dt_2 {
+    margin-left: 47%;
+    display: flex;
+    gap: 10px;
+}
+
+.career_photo{
+    height: 300px;
+    width: 100%;
+}
+
+.career_heading{
+    background-color: rgba(153, 153, 153, .4);
+    color: #FFF;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 25px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+/* ============================= End  Career Section =========== */
+/* ======================= Contact Us ============ */
+.contact_details {
+    margin-top: 90px;
+    display: flex;
+}
+
+.contact_one {
+    width: 50%;
+}
+
+.contact_info {
+    width: 100%;
+    margin-left: 100px;
+}
+
+.contact_head {
+    font-size: 30px;
+    color: #262626;
+    font-weight: 500;
+    font-family: "Segoe UI";
+    line-height: 1.2;
+}
+
+.para_8 {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    color: #192836;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.information_phone {
+    display: flex;
+}
+
+.contact_address {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.icons_1 {
+    margin-top: 5px;
+}
+
+.contact_add {
+    font-size: 18px;
+    color: #262626;
+    font-weight: 500;
+    font-family: "Segoe UI";
+    line-height: 1.2;
+}
+
+.para_9 {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    color: #192836;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.first_name {
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #333;
+    display: block;
+    float: none;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 38px;
+    width: 100%;
+    line-height: 1.3;
+}
+
+.mandatory {
+    color: red;
+}
+
+.form_section {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.field_one {
+    width: 40%;
+}
+
+.contact_label {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    float: none;
+    line-height: 1.3;
+    padding: 0;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.contact_label_message {
+    width: 150%;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    float: none;
+    line-height: 1.3;
+    padding: 0;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.field_two {
+    margin-top: 30px;
+}
+
+.message {
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #333;
+    display: block;
+    float: none;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 38px;
+    width: 208%;
+    line-height: 1.3;
+}
+
+.button_submit {
+    margin-top: 30px;
+    margin-left: 30%;
+}
+
+.button_4 {
+    padding: 15px 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3197fb;
+    color: #FFF;
+}
+
+.button_4:hover {
+    background-color: #00d9a6;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.popup_img {
+    max-width: 100%;
+    height: auto;
+}
+
+#Popup.show {
+    display: block;
+}
+
+
+/* ============================ End Contact US ============== */
+
+/* ============================= Services Section ============ */
+blockquote {
+    border-left: 4px solid #ebebeb;
+    margin-top: 10px;
+    padding-left: 1em;
+}
+
+.services_element {
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+
+.para_ul {
+    margin-left: 20px;
+    list-style: url(photos/checkmark.png);
+}
+
+.training_section {
+    width: 85%;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.training_sec1 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.heading_5 {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    color: #192836;
+}
+
+.icons_2 {
+    float: right;
+    margin-right: 30px;
+    margin-top: -40px;
+}
+
+.para_10 {
+    margin-top: 20px;
+    font-family: "Segoe UI";
+    font-size: 18px;
+}
+
+.adobe_tech_section {
+    margin-top: 320px;
+}
+
+.info_flex {
+    margin-left: 100px;
+}
+
+.heading_6 {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 20px;
+    color: #202020;
+    font-family: "Quicksand";
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.para_11 {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    color: #192836;
+    margin-top: 50px;
+    width: 90%;
+    text-align: left;
+}
+
+.adobe_tech_flex_section {
+    margin-top: 236px;
+}
+
+.heading_7 {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    color: #192836;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.software_posting_job {
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.para_12 {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 80px;
+}
+
+.Software_info {
+    margin-left: 50px;
+    font-family: "Segoe UI";
+    color: #666;
+    font-size: 16px;
+    margin: 0 0 10px;
+    word-wrap: break-word;
+}
+
+.software_apply {
+    margin-top: 30px;
+    color: #192836;
+    display: flex;
+}
+
+.file {
+    color: #666;
+        border: 1px solid #ccc;
+        padding: 6px 12px;
+        text-shadow: 0 1px #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        width: 100%;
+        box-shadow: 0px 1px 1px 0px rgba(221, 221, 221, 1);
+        background-color: #f5f5f5;
+}
+
+.job_button_software {
+    margin-left: 110%;
+    margin-top: -35px;
+}
+
+.it_development{
+    margin-top: 20px;
+}
+
+.it_photo{
+    height: 350px;
+    width: 85%;
+    margin-left: 100px;
+}
+
+/* ============================= End Services Section ============ */
+
+/* ============================= Client Section ============ */
+.client_element {
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.vendor_info {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* .vendor_bg {
+    height: 300px;
+    width: 25%;
+    box-shadow: 0 0 30px 0 rgba(70, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    flex: 0 0 22%;
+    position: relative;
+} */
+
+.vendor_logo1 {
+    height: 30px;
+    width: 100px;
+}
+/* .vendor_bg:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  } */
+.container{
+    display: flex;
+    gap: 50px;
+}
+ .card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+    background: #EEE;
+    transition: 0.5s;
+    box-shadow: 0 0 30px 0 rgba(70, 88, 144, 0.12);
+    border-radius: 10px;
+}
+.content{
+    margin-top: 20px;
+}
+.para_5 {
+    font-family: "Segoe UI";
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    justify-content: center;
+}
+.container .card:hover{
+    box-shadow: 0 30px 50px rgba(0,0,0,.2);
+}
+.container .card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .face.face1{
+    box-sizing: border-box;
+    /* padding: 20px; */
+    text-align: center;
+    background: #fff;
+    color: #000;
+}
+/* .container .card .face.face1 h2{
+    margin-top: 10px;
+} */
+/* .container .card .face.face1 a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    border:2px solid #000;
+    transition: 0.5s;
+} */
+/* .container .card .face.face1 a:hover{
+    color:#fff;
+    background: #FFF;
+} */
+.container .card .face.face2{
+    background: #FFF;
+    transition: 0.5s;
+}
+.container .card:hover .face.face2{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    left: 60%;
+    /* transform: translateX(-50%); */
+    background: transparent;
+}
+/* .container .card .face.face2 h2{
+    margin: 0px;
+    padding: 0;
+    font-size: 10em;
+    color: #fff;
+    transition: 0.5s;
+}
+.container .card:hover .face.face2 h2{
+    color:#FFF;
+    font-size: 2em;
+} */
+
+
+/* ============================= End  Client Section ============ */
+
+/* ============================= Contact Section ============ */
+
+.add_sec {
+    display: flex;
+}
+
+.icons_flag {
+    height: 40px;
+    width: 30px;
+}
+
+.iframe {
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 85%;
+}
+/* ============================= End Contact Section ============ */
+
+/* ================= Preloader ================ */
+#preloader {
+    background: #FFF url(photos/preloader_bg_white.gif) no-repeat center center;
+    background-size: 8%;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+/* ================= End  Preloader ================ */
